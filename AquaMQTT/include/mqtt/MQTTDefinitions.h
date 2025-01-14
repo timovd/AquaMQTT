@@ -21,6 +21,9 @@ constexpr char ENUM_UNKNOWN[] = { "UNKNOWN" };
 constexpr char ENUM_AQUAMQTT_MODE_LISTENER[] = { "LISTENER" };
 constexpr char ENUM_AQUAMQTT_MODE_MITM[]     = { "MITM" };
 
+constexpr char ENUM_AQUAMQTT_PROTOCOL_LEGACY[] = { "LEGACY" };
+constexpr char ENUM_AQUAMQTT_PROTOCL_NEXT[]    = { "NEXT" };
+
 constexpr char ENUM_BRAND_ATLANTIC[] = { "Atlantic" };
 constexpr char ENUM_BRAND_THERMOR[]  = { "Thermor" };
 constexpr char ENUM_BRAND_SAUTER[]   = { "Sauter" };
@@ -77,6 +80,7 @@ constexpr char MAIN_HOT_WATER_TEMP[]            = { "waterTemp" };
 constexpr char MAIN_SUPPLY_AIR_TEMP[]           = { "supplyAirTemp" };
 constexpr char MAIN_EVAPORATOR_AIR_TEMP_UPPER[] = { "evaporatorAirTemp" };
 constexpr char MAIN_EVAPORATOR_AIR_TEMP_LOWER[] = { "evaporatorAirTempLower" };
+constexpr char MAIN_COMPRESSOR_OUTLET_TEMP[]    = { "compressorOutletTemp" };
 constexpr char MAIN_FAN_PWM[]                   = { "fanPWM" };
 constexpr char MAIN_STATE_FAN[]                 = { "stateFan" };
 constexpr char MAIN_STATE_HEATPUMP[]            = { "stateHeatpump" };
@@ -127,6 +131,17 @@ constexpr char ENERGY_POWER_HEAT_ELEMENT[]       = { "powerHeatingElem" };
 constexpr char ENERGY_POWER_HEATPUMP[]           = { "powerHeatpump" };
 constexpr char ENERGY_TOTAL_WATER_PRODUCTION[]   = { "totalWaterProduction" };
 
+constexpr char ENERGY_DIAG_AIR_TEMP_MAX[]           = { "diagAirTempMax" };
+constexpr char ENERGY_DIAG_AIR_TEMP_MIN[]           = { "diagAirTempMin" };
+constexpr char ENERGY_DIAG_EVA_UPPER_AIR_TEMP_MAX[] = { "diagEvaUpperMax" };
+constexpr char ENERGY_DIAG_EVA_UPPER_AIR_TEMP_MIN[] = { "diagEvaUpperMin" };
+constexpr char ENERGY_DIAG_EVA_LOWER_AIR_TEMP_MAX[] = { "diagEvaLowerMax" };
+constexpr char ENERGY_DIAG_EVA_LOWER_AIR_TEMP_MIN[] = { "diagEvaLowerMin" };
+constexpr char ENERGY_DIAG_COMPRESSOR_TEMP_MAX[]    = { "diagCompressorMax" };
+constexpr char ENERGY_DIAG_COMPRESSOR_TEMP_MIN[]    = { "diagCompressorMin" };
+constexpr char ENERGY_DIAG_WATER_TEMP_MAX[]         = { "diagWaterTempMax" };
+constexpr char ENERGY_DIAG_WATER_TEMP_MIN[]         = { "diagWaterTempMin" };
+
 constexpr char ERROR_ERROR_NUMBER[] = { "errorNumber" };
 
 constexpr char STATS_AQUAMQTT_ADDR[]              = { "ipAddress" };
@@ -143,6 +158,7 @@ constexpr char STATS_ACTIVE_OVERRIDES[]           = { "activeOverrides" };
 constexpr char STATS_ACTIVE_OVERRIDES_MAIN[]      = { "activeOverridesMain" };
 constexpr char STATS_ENABLE_FLAG_PV_HEATPUMP[]    = { "flagPVModeHeatPump" };
 constexpr char STATS_ENABLE_FLAG_PV_HEATELEMENT[] = { "flagPVModeHeatElement" };
+constexpr char STATS_AQUAMQTT_PROTOCOL[]          = { "protocolVersion" };
 
 constexpr char DEBUG[] = { "debug" };
 

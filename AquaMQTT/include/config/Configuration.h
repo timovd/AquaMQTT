@@ -21,6 +21,7 @@ namespace config
 /**
  * Defines the network name of your esp32 device in your network
  */
+
 constexpr char networkName[] = "aquamqtt";
 
 /**
@@ -59,6 +60,22 @@ constexpr bool OVERRIDE_TIME_AND_DATE_IN_MITM = true;
  * Choose to publish raw messages represented as hex-string on debug mqtt topics
  */
 constexpr bool DEBUG_RAW_SERIAL_MESSAGES = false;
+
+/**
+ * Choose to publish message statistics from the serial interfaces, if everything
+ * works as it should you may disable this. If set to true, this will provide the
+ * topics "msgHandled, msgUnhandled, msgCRCNOK and msgSent" topics for each serial
+ * channel (hmi/main or listener),
+ */
+constexpr bool MQTT_PUBLISH_SERIAL_STATISTICS = true;
+
+/**
+ * Choose to publish time and date used by the heatpump. This is mainly for debugging
+ * if the time and date override from AquaMQTT works as expected. You may want to
+ * enable this, if you are customizing the NTP timezone or server or even trying to
+ * use the RTC module from the AquaMQTT board.
+ */
+constexpr bool MQTT_PUBLISH_HEATPUMP_TIME_AND_DATE = true;
 
 /**
  * Change the time interval where all known attributes are re-published to the MQTT broker.
